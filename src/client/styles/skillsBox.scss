@@ -1,0 +1,93 @@
+@import url('./box.scss');
+
+$primary-color: #cd0305;
+
+#skills-languages-box {
+    background: white;
+    height: fit-content;
+
+    .grid-container {
+        display: grid;
+        justify-self: center;
+        grid-template-columns: auto auto auto auto;
+        background: white;
+        width: 70%;
+        margin: 20px auto 0 auto;
+    }
+
+    .grid-item {
+        font-size: 45px;
+        text-align: center;
+        font-family: 'Averia Gruesa Libre', cursive;
+        margin-bottom: 8px;
+    }
+
+    i {
+        .pic-icon {
+            filter: grayscale(100%);
+            width: 45px;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+
+        &:hover {
+            font-size: 55px;
+        }
+    }
+
+    h4 {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    h5 {
+        margin-top: 0px;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    hr {
+        width: 70%;
+        margin: auto;
+        border-top: 1px solid rgba(36, 1, 1, 0.11);
+    }
+
+    .language-grid-container {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    #skills-languages-box {
+        
+        .grid-container {
+            grid-template-columns: auto auto auto;
+            background: white;
+            width: 90%;
+        }
+
+        .grid-item {
+            font-size: 27px;
+        }
+
+        i {
+            .pic-icon {
+                width: 27px;
+            }
+    
+            &:hover {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+        .grid-container {
+            width: 95%;
+            margin: 0;
+        }
+}

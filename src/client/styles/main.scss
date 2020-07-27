@@ -1,0 +1,58 @@
+@import url(./header.scss);
+@import url(./welcomeBox.scss);
+@import url(./introductionBox.scss);
+@import url(./modal.scss);
+@import url(./skillsBox.scss);
+@import url(./projectBox.scss);
+@import url(./contactBox.scss);
+@import url(./footer.scss);
+
+
+
+$primary-color: #cd0305;
+
+.section-title {
+    font-size: 35px;
+    width: fit-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+
+    &::before,
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: .2rem solid $primary-color;
+        width: 4rem;
+        margin: 0 1rem;
+        transform: translateY(-0.5rem);
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .section-title {
+        font-size: 25px;
+        
+        &::before,
+        &::after {
+            display: inline-block;
+            content: "";
+            width: 2rem;
+            margin: 0 1rem;
+            transform: translateY(-0.3rem);
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-title {
+        font-size: 24px;
+        
+        &::before,
+        &::after {
+            margin: 0 0.7rem;
+            transform: translateY(-0.3rem);
+        }
+    }
+}

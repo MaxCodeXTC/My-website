@@ -1,0 +1,63 @@
+$primary-color: #cd0305;
+
+html {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.nav-bar {
+    width: 79%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: 0;
+    left: 10.5%;
+    background: white;
+    list-style: none;
+    z-index: 5;
+
+    .nav-item {
+        background: $primary-color;
+        height: 35px;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        border-left: 1px solid white;
+
+        &:first-child {
+            border: none;
+        }
+
+        a {
+            color: white;
+            font-family: 'Itim', cursive;
+            font-size: 23px;
+            text-decoration: none;
+            width: 100%;
+            margin: auto;
+        }
+
+        &:hover {
+            background: rgb(247, 247, 247);
+            border: $primary-color solid 1px;
+
+            a {
+                color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .nav-bar {
+        .nav-item {
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+}

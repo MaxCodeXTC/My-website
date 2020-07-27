@@ -1,0 +1,76 @@
+@import url('./box.scss');
+
+$primary-color: #cd0305;
+
+#intro-box {
+    background-image: url(../images/background-photo2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 515px;
+
+    #intro-text {
+        width: 51%;
+        text-indent: 50px;
+        font-family: 'Red Rose', cursive;
+        font-size: 17px;
+        text-align: justify;
+        transform: translate(370px, 10px);
+    }
+
+    h1 {
+        text-indent: 0;
+        margin-bottom: 20px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    a {
+        color: rgb(48, 48, 48);
+    }
+
+    span:hover {
+        color: $primary-color;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 901px) {
+    #intro-box {
+        #intro-text {
+            font-size: 15px;
+            transform: translate(320px, 10px);
+        }
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 775px){
+    #intro-box {
+        #intro-text {
+            font-size: 14px;
+            transform: translate(270px, 10px);
+        }
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #intro-box {
+        // background: url(../images/background-photo2.png);
+        background: rgb(255, 255, 255);
+        height: fit-content;
+        padding-bottom: 20px;
+        
+            #intro-text {
+                width: 80%;
+                text-indent: 40px;
+                font-size: 12px;
+                transform: translate(0px, 10px);
+                margin: auto;
+            }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .grid-container {
+        width: 95%;
+        margin: 0;
+    }
+}

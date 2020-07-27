@@ -1,0 +1,49 @@
+@import url('./box.scss');
+@import url('./form.scss');
+
+#form-box {
+    background: white;
+    padding: 0 0 10px 0;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    hr {
+        margin: 30px auto 10px;
+        width: 50%;
+    }
+
+    .social-div {
+        width: fit-content;
+        margin: 0px auto;
+    }
+
+    .social-icon {
+        position: relative;
+        margin: 0px 10px;
+        color: rgba(0, 0, 0, 0.897);
+
+        &:hover {
+            transform: scale(1.50);
+            box-shadow: 0 0 15px 0 rgba(240, 13, 13, 0.5);
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #form-box {
+        hr {
+            margin: 15px auto 15px;
+            width: 70%;
+        }
+
+        .social-div {
+            margin: 3px auto;
+        }
+
+        .social-icon {
+            margin: 0px 5px;
+        }
+    }
+}

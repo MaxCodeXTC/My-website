@@ -1,0 +1,23 @@
+$primary-color: #cd03065d;
+
+footer {
+    background: $primary-color;
+    text-align: center;
+    padding: 1px 0; 
+
+    p, a {
+        color: white;
+        margin: 6px;
+    }
+
+    .social-div {
+        margin: 0;
+    }
+
+    .social-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 1em;
+        margin: 5px 0 0 0 ;
+    }
+}
