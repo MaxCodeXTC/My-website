@@ -4,6 +4,8 @@ const creds = require('./client/js/config');
 const path = require('path');
 var cors = require('cors');
 
+const serverless = require('serverless-http');
+
 
 const app = express();
 app.use(cors());
@@ -73,6 +75,7 @@ function listening() {
 }
 
 app.use(express.json());
-app.use('/', router);
+app.use('/.netlify/functions/api', router);
 
 module.exports = server;
+module.exports.handler = serverless(app);
