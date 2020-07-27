@@ -11,12 +11,12 @@ function Modal() {
           <h4>Book recommendation</h4>
           <form
             id="contact-form"
-            onSubmit={handleSubmit.bind(this)}
             method="POST"
+            data-netlify="true"
           >
             <div className="form-group">
               <label htmlFor="name">Your name:</label>
-              <input type="text" className="form-control" id="modal-name" required />
+              <input type="text" className="form-control" id="modal-name" name="name" required />
             </div>
             <div className="form-group">
               <label htmlFor="exampleInputEmail1">Book's title: </label>
@@ -24,6 +24,7 @@ function Modal() {
                 type="text"
                 className="form-control"
                 id="modal-book-title"
+                name="book"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -33,6 +34,7 @@ function Modal() {
                 className="form-control"
                 rows="3"
                 id="modal-comments"
+                name="comments"
               ></textarea>
             </div>
 

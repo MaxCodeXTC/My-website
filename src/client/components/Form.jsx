@@ -3,10 +3,10 @@ import axios from "axios";
 import PropTypes from "prop-types";
 
 const Form = ({ email_book, content }) => (
-  <form id="contact-form" onSubmit={handleSubmit.bind(this)} method="POST">
+  <form id="contact-form" method="POST" data-netlify="true">
     <div className="form-group">
       <label htmlFor="name">Your name:</label>
-      <input type="text" className="form-control" id="name" required />
+      <input type="text" className="form-control" id="name" name="name" required />
     </div>
     <div className="form-group">
       <label htmlFor="exampleInputEmail1">{email_book}</label>
@@ -14,12 +14,13 @@ const Form = ({ email_book, content }) => (
         type="text"
         className="form-control"
         id="email"
+        name="email"
         aria-describedby="emailHelp"
       />
     </div>
     <div className="form-group">
       <label htmlFor="message">{content}</label>
-      <textarea className="form-control" rows="3" id="message"></textarea>
+      <textarea className="form-control" rows="3" id="message" name="message"></textarea>
     </div>
     
     <button type="submit" className="submit-btn">
