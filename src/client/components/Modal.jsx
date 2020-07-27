@@ -10,9 +10,11 @@ function Modal() {
         <div id="modal_card">
           <h4>Book recommendation</h4>
           <form
+            name="bookRecommend"
             id="contact-form"
             method="POST"
             data-netlify="true"
+            netlify-honeypot="bot-field"
           >
             <div className="form-group">
               <label htmlFor="name">Your name:</label>

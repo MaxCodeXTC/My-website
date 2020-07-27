@@ -3,7 +3,7 @@ import axios from "axios";
 import PropTypes from "prop-types";
 
 const Form = ({ email_book, content }) => (
-  <form id="contact-form" method="POST" data-netlify="true">
+  <form name="contact" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
     <div className="form-group">
       <label htmlFor="name">Your name:</label>
       <input type="text" className="form-control" id="name" name="name" required />
