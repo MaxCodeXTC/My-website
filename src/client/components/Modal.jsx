@@ -54,7 +54,7 @@ function handleSubmit(e) {
   
     axios({
       method: "POST",
-      url: "http://localhost:8080/send",
+      url: "/send",
       data: {
         name: name,
         email: em_book,
