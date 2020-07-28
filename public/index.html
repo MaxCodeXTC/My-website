@@ -27,7 +27,73 @@
 
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+
+      <!-- form -->
+      <form name="contact" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <div className="form-group">
+          <label htmlFor="name">Your name:</label>
+          <input type="text" className="form-control" id="name" name="name" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputEmail1">{email_book}</label>
+          <input
+            type="text"
+            className="form-control"
+            id="email"
+            name="email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">{content}</label>
+          <textarea className="form-control" rows="3" id="message" name="message"></textarea>
+        </div>
+        
+        <button type="submit" className="submit-btn">
+          Send
+        </button>
+      </form>
+
+
+      <!-- modal -->
+      <form
+            name="bookRecommend"
+            id="contact-form"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <div className="form-group">
+              <label htmlFor="name">Your name:</label>
+              <input type="text" className="form-control" id="modal-name" name="Mname" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="exampleInputEmail1">Book's title: </label>
+              <input
+                type="text"
+                className="form-control"
+                id="modal-book-title"
+                name="book"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Any comments/reviews?</label>
+              <textarea
+                className="form-control"
+                rows="3"
+                id="modal-comments"
+                name="comments"
+              ></textarea>
+            </div>
+
+            <button type="submit" className="submit-btn">
+              Send
+            </button>
+          </form>
+
+    </div>
     <script src="../src/index.js" type="text/jsx"></script>
   </body>
 </html>

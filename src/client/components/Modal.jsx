@@ -43,7 +43,7 @@ function Modal() {
             <button type="submit" className="submit-btn">
               Send
             </button>
-          </form>{" "}
+          </form>
         </div>
       </div>
     </div>
