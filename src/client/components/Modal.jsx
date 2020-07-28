@@ -10,6 +10,7 @@ function Modal() {
         <div id="modal_card">
           <h4>Book recommendation</h4>
           <form
+          action="/success"
             name="bookRecommend"
             id="contact-form"
             method="POST"
