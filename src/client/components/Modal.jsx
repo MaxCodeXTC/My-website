@@ -18,12 +18,12 @@ function Modal() {
           >
             <div className="form-group">
               <label htmlFor="name">Your name:</label>
-              <input type="text" className="form-control" id="modal-name" name="Mname" required />
+              <input type="hidden" className="form-control" id="modal-name" name="Mname" required />
             </div>
             <div className="form-group">
               <label htmlFor="exampleInputEmail1">Book's title: </label>
               <input
-                type="text"
+                type="hidden"
                 className="form-control"
                 id="modal-book-title"
                 name="book"

@@ -6,12 +6,12 @@ const Form = ({ email_book, content }) => (
   <form name="contact" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
     <div className="form-group">
       <label htmlFor="name">Your name:</label>
-      <input type="text" className="form-control" id="name" name="name" required />
+      <input type="hidden" className="form-control" id="name" name="name" required />
     </div>
     <div className="form-group">
       <label htmlFor="exampleInputEmail1">{email_book}</label>
       <input
-        type="text"
+        type="hidden"
         className="form-control"
         id="email"
         name="email"
