@@ -17,7 +17,7 @@ function App() {
       <Modal />
       <SkillsBox />
       <Projects/>
-      <ContactBox />
+      {/* <ContactBox /> */}
       <Footer/>
     </div>
   );

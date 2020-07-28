@@ -29,44 +29,44 @@ const Form = ({ email_book, content }) => (
   </form>
 );
 
-function handleSubmit(e) {
-  e.preventDefault();
-  const name = document.getElementById("name").value;
-  const em_book = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+// function handleSubmit(e) {
+//   e.preventDefault();
+//   const name = document.getElementById("name").value;
+//   const em_book = document.getElementById("email").value;
+//   const message = document.getElementById("message").value;
 
-  console.log("name: " + name);
-  console.log("em_book" + em_book);
-  console.log("message: " + message);
+//   console.log("name: " + name);
+//   console.log("em_book" + em_book);
+//   console.log("message: " + message);
 
 
-  axios({
-    method: "POST",
-    url: "/send",
-    data: {
-      name: name,
-      email: em_book,
-      message: message,
-    }
-  }).then(response => {
-    if (response.data === "success") {
-      window.alert("Message Sent.");
-      console.log("MESSAGE SENT");
-      resetForm();
-    } else if (response.data === "fail") {
-     window.alert("Message failed to send.");
-     console.log("MESSAGE NOT SENT");
-    }
-  });
-}
+//   axios({
+//     method: "POST",
+//     url: "/send",
+//     data: {
+//       name: name,
+//       email: em_book,
+//       message: message,
+//     }
+//   }).then(response => {
+//     if (response.data === "success") {
+//       window.alert("Message Sent.");
+//       console.log("MESSAGE SENT");
+//       resetForm();
+//     } else if (response.data === "fail") {
+//      window.alert("Message failed to send.");
+//      console.log("MESSAGE NOT SENT");
+//     }
+//   });
+// }
 
-function resetForm() {
-  document.getElementById("contact-form").reset();
-}
+// function resetForm() {
+//   document.getElementById("contact-form").reset();
+// }
 
-Form.propTypes = {
-  email_book: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired
-};
+// Form.propTypes = {
+//   email_book: PropTypes.string.isRequired,
+//   content: PropTypes.string.isRequired
+// };
 
 export default Form;

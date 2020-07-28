@@ -1,17 +1,8 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from "react";
 
-const Success = () => (
-  <Layout>
-    <div id="main" className="alt">
-        <section id="one">
-            <div className="inner">
-                <h1>Thank You!</h1>
-                <p>Your message has been sent. We will be in touch soon.</p>
-            </div>
-        </section>
-    </div>
-  </Layout>
-)
-
-export default Success
+export default () => (
+  <div>
+    <h1>Thank you!</h1>
+    <p>This is a custom thank you page for form submissions</p>
+  </div>
+);

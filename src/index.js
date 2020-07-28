@@ -42,11 +42,11 @@ for (var j = 0; j < navItems.length; j++) {
     });
 }
 
-
+{/* 
 document.getElementById('book-recommend').addEventListener("click", function(){
      document.getElementById("myModal").style.display= "block";
  });
 
  document.getElementById('modal_close').addEventListener("click", function(){
      document.getElementById("myModal").style.display= "none";
- });
+ }); */}

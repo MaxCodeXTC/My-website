@@ -21,7 +21,7 @@ function Introduction() {
         </p>
         <p>
           Half of my time spent coding and the other half spent either in arts
-          or searching for new interesting books to read <span role="img" aria-label="aria-label">🤦🏻‍♀️</span>  <span id="book-recommend">(Recommend me a book)</span>. I also enjoy
+          or searching for new interesting books to read <span role="img" aria-label="aria-label">🤦🏻‍♀️.</span> I also enjoy
           travelling and exploring but I rarely do because I am a lazy introvert
           who prefers staying at home.
         </p>

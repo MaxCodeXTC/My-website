@@ -1,10 +1,10 @@
 import React from "react";
-// import SocialContact from "./SocialContact"
+import SocialContact from "./SocialContact"
 
 function Footer() {
   return (
     <footer>
-      {/* <SocialContact /> */}
+      <SocialContact />
       <p>© 2020 | Sarah Abdelfattah</p>
     </footer>
   );
